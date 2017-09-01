@@ -1,9 +1,33 @@
-body {
-    color: red;
+* {
+margin: 0;
+padding: 0;
+border: 0;
+line-height: 1.4em;
+vertical-align: baseline;
+text-decoration: none;
+outline: 0;
+}
+#home {
+    background-image: url("../home-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    filter: brightness(0.7);
+    text-align: center;
+    text-transform: uppercase;
+}
+.homePageText {
+    color: #fff;
+    font-weight: 800;
+    font-size: 25px;
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    margin: 17% 25vw;
+    h1 {
+        font-weight: 800;
+        font-size: 45px;
+    }
 }
 
-p {
-    @extend body;
-    background-color: black;
-    font-size: 50px;
-}
