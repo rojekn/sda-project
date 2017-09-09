@@ -1,0 +1,106 @@
+$homePageFontColor: #fff;
+$backgroundColor: #555;
+
+* {
+margin: 0;
+padding: 0;
+border: 0;
+line-height: 1.4em;
+vertical-align: baseline;
+text-decoration: none;
+outline: 0;
+}
+#home {
+    background-image: url("../home-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    text-transform: uppercase;
+}
+@keyframes headerText {
+    0%   {transform: translateX(-100%);}
+    100% {transform: translateX(0);}
+}
+@-webkit-keyframes headerText {
+    0%   {transform: translateX(-100%);}
+    100% {transform: translateX(0);}
+}
+@keyframes usubtitle {
+    0%   {transform: translateX(100%);}
+    100% {transform: translateX(0);}
+}
+@-webkit-keyframes subtitle {
+    0%   {transform: translateX(100%);}
+    100% {transform: translateX(0);}
+}
+
+.homePageText {
+    color: $homePageFontColor;
+    font-weight: 800;
+    font-size: 25px;
+    border-top: 5px solid $homePageFontColor;
+    border-bottom: 5px solid $homePageFontColor;
+    margin-top: 35vh ;
+    .headerText h1 {
+        font-weight: 800;
+        font-size: 45px;
+        animation: headerText 3s;
+        -webkit-animation: headerText 3s;
+    }
+    .underHeaderText {
+        padding: 5px;
+        animation: subtitle 3s;
+        -webkit-animation: subtitle 3s;
+    }
+}
+.navbar-default .navbar-nav>li>a {
+    color: $homePageFontColor;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    margin: 10px;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    background-color: rgba(255,255,255,0.3);
+    border: 4px inset rgba(255,255,255,0.3);
+    border-radius: 5%;
+}
+.navbar {
+    background-color: transparent;
+    border: none;
+    transition: 2s;
+}
+footer {
+    background-color: $backgroundColor;
+    color: $homePageFontColor;
+}
+footer .container-fluid h4 {
+    margin: 20px;
+}
+p.fastMenu a,
+p.fastMenu a :hover {
+    color: $homePageFontColor;
+    text-decoration: none;
+}
+.separator {
+    width: 40px;
+    height: 2px;
+    background-color: $homePageFontColor;
+    margin: 10px auto;
+}
+footer .icon {
+    display: inline-block;
+    margin: auto auto;
+    padding: 20px;
+}
+.icon-fb,
+.icon-gitHub {
+    width: 40px;
+}
+p.fastMenu,
+p.contactData {
+    margin: auto auto;
+    padding-top: 20px;
+}
