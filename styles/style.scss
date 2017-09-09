@@ -27,7 +27,7 @@ outline: 0;
     0%   {transform: translateX(-100%);}
     100% {transform: translateX(0);}
 }
-@keyframes usubtitle {
+@keyframes subtitle {
     0%   {transform: translateX(100%);}
     100% {transform: translateX(0);}
 }
@@ -64,8 +64,9 @@ outline: 0;
 }
 .navbar-default .navbar-nav>li>a:hover {
     background-color: rgba(255,255,255,0.3);
-    border: 4px inset rgba(255,255,255,0.3);
+    border: 4px rgba(255,255,255,0.3);
     border-radius: 5%;
+    color: $backgroundColor;
 }
 .navbar {
     background-color: transparent;
@@ -85,10 +86,10 @@ p.fastMenu a :hover {
     text-decoration: none;
 }
 .separator {
-    width: 40px;
+    width: 35px;
     height: 2px;
     background-color: $homePageFontColor;
-    margin: 10px auto;
+    margin: -15px auto 10px auto;
 }
 footer .icon {
     display: inline-block;
