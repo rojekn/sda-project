@@ -73,6 +73,68 @@ outline: 0;
     border: none;
     transition: 2s;
 }
+
+
+
+main > .container-fluid {
+    background-color: rgb(51.9%, 51.9%, 51.9%);
+}
+#about-me {
+    text-align: justify;
+    margin: 30px 0;
+}
+.profil-photo .img-circle {
+    display: block;
+    width: 180px; 
+    margin: auto auto;
+}
+.about-me-paragraph {
+    margin: 20px auto;
+    p, h3 {
+    display: block;
+    margin: 3px 0;
+    color: $homePageFontColor;
+    }
+}
+.time-line {
+    padding-bottom: 50px;
+}
+.time-line ul li {
+    list-style: none;
+    display: block;
+    margin: 10px;
+    width: 10px;
+    background-color: $homePageFontColor;
+    margin: auto auto;
+}
+.time-line ul li .point{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $homePageFontColor;
+    transform: translateY(20px);
+    transform: translateX(-10px);
+}
+.glyphicon.glyphicon-chevron-up {
+    color: $homePageFontColor;
+    font-size: 50px;
+    position: absolute;
+    transform: translate(-18px, 45px);
+}
+.education-steps {
+    display: block;
+    width: 300px;
+    padding: 50px 50px;
+    transform: translateY(50px);
+}
+
+
+
+
+
+
+
 footer {
     background-color: $backgroundColor;
     color: $homePageFontColor;
