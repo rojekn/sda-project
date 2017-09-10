@@ -77,7 +77,7 @@ outline: 0;
 
 
 main > .container-fluid {
-    background-color: rgb(51.9%, 51.9%, 51.9%);
+    background-color: #b6b6b6;
 }
 #about-me {
     text-align: justify;
@@ -90,22 +90,35 @@ main > .container-fluid {
 }
 .about-me-paragraph {
     margin: 20px auto;
-    p, h3 {
+    p, h2 {
     display: block;
     margin: 3px 0;
     color: $homePageFontColor;
+    }
+    h2 {
+        font-weight: 700;
+    }
+}
+.education-header {
+    text-align: center;
+    h2 {
+        margin: 15px auto;
+        color: $homePageFontColor;
+        font-weight: 700;
     }
 }
 .time-line {
     padding-bottom: 50px;
 }
-.time-line ul li {
+.time-line ul {
+    transform: translateX(-130px);
+    li {
     list-style: none;
     display: block;
-    margin: 10px;
-    width: 10px;
+    width: 11px;
     background-color: $homePageFontColor;
     margin: auto auto;
+    }
 }
 .time-line ul li .point{
     position: absolute;
@@ -113,24 +126,32 @@ main > .container-fluid {
     height: 30px;
     border-radius: 50%;
     background-color: $homePageFontColor;
-    transform: translateY(20px);
-    transform: translateX(-10px);
+    transform: translate(-9px, -1px);
 }
 .glyphicon.glyphicon-chevron-up {
     color: $homePageFontColor;
     font-size: 50px;
     position: absolute;
-    transform: translate(-18px, 45px);
+    transform: translate(-22px, -15px);
 }
 .education-steps {
     display: block;
-    width: 300px;
-    padding: 50px 50px;
-    transform: translateY(50px);
+    padding: 20px 50px;
+    transform: translateY(30px);
+    white-space: nowrap;
+    color: $homePageFontColor;
+    p {
+        display: block;
+        background-color: $backgroundColor;
+        min-width: 250px;
+        padding: 15px;
+        border-radius: 5px;
+    }
 }
-
-
-
+.education-steps > p::first-line {
+            font-weight: 700;
+            font-size: 15px;
+        }
 
 
 
