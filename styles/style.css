@@ -26,7 +26,7 @@
     transform: translateX(-100%); }
   100% {
     transform: translateX(0); } }
-@keyframes usubtitle {
+@keyframes subtitle {
   0% {
     transform: translateX(100%); }
   100% {
@@ -62,13 +62,85 @@
 
 .navbar-default .navbar-nav > li > a:hover {
   background-color: rgba(255, 255, 255, 0.3);
-  border: 4px inset rgba(255, 255, 255, 0.3);
-  border-radius: 5%; }
+  border: 4px rgba(255, 255, 255, 0.3);
+  border-radius: 5%;
+  color: #555; }
 
 .navbar {
   background-color: transparent;
   border: none;
   transition: 2s; }
+
+main > .container-fluid {
+  background-color: #b6b6b6; }
+
+#about-me {
+  text-align: justify;
+  margin: 30px 0; }
+
+.profil-photo .img-circle {
+  display: block;
+  width: 180px;
+  margin: auto auto; }
+
+.about-me-paragraph {
+  margin: 20px auto; }
+  .about-me-paragraph p, .about-me-paragraph h2 {
+    display: block;
+    margin: 3px 0;
+    color: #fff; }
+  .about-me-paragraph h2 {
+    font-weight: 700; }
+
+.education-header {
+  text-align: center; }
+  .education-header h2 {
+    margin: 15px auto;
+    color: #fff;
+    font-weight: 700; }
+
+.time-line {
+  padding-bottom: 50px; }
+
+.time-line ul {
+  transform: translateX(-130px); }
+  .time-line ul li {
+    list-style: none;
+    display: block;
+    width: 11px;
+    background-color: #fff;
+    margin: auto auto; }
+
+.time-line ul li .point {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: translate(-9px, -1px); }
+
+.glyphicon.glyphicon-chevron-up {
+  color: #fff;
+  font-size: 50px;
+  position: absolute;
+  transform: translate(-22px, -15px); }
+
+.education-steps {
+  display: block;
+  padding: 20px 50px;
+  transform: translateY(30px);
+  white-space: nowrap;
+  color: #fff; }
+  .education-steps p {
+    display: block;
+    background-color: #555;
+    min-width: 250px;
+    padding: 15px;
+    border-radius: 5px; }
+
+.education-steps > p::first-line {
+  font-weight: 700;
+  font-size: 15px; }
 
 footer {
   background-color: #555;
@@ -83,10 +155,10 @@ p.fastMenu a :hover {
   text-decoration: none; }
 
 .separator {
-  width: 40px;
+  width: 35px;
   height: 2px;
   background-color: #fff;
-  margin: 10px auto; }
+  margin: -15px auto 10px auto; }
 
 footer .icon {
   display: inline-block;

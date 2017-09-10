@@ -27,7 +27,7 @@ outline: 0;
     0%   {transform: translateX(-100%);}
     100% {transform: translateX(0);}
 }
-@keyframes usubtitle {
+@keyframes subtitle {
     0%   {transform: translateX(100%);}
     100% {transform: translateX(0);}
 }
@@ -64,14 +64,98 @@ outline: 0;
 }
 .navbar-default .navbar-nav>li>a:hover {
     background-color: rgba(255,255,255,0.3);
-    border: 4px inset rgba(255,255,255,0.3);
+    border: 4px rgba(255,255,255,0.3);
     border-radius: 5%;
+    color: $backgroundColor;
 }
 .navbar {
     background-color: transparent;
     border: none;
     transition: 2s;
 }
+
+
+
+main > .container-fluid {
+    background-color: #b6b6b6;
+}
+#about-me {
+    text-align: justify;
+    margin: 30px 0;
+}
+.profil-photo .img-circle {
+    display: block;
+    width: 180px; 
+    margin: auto auto;
+}
+.about-me-paragraph {
+    margin: 20px auto;
+    p, h2 {
+    display: block;
+    margin: 3px 0;
+    color: $homePageFontColor;
+    }
+    h2 {
+        font-weight: 700;
+    }
+}
+.education-header {
+    text-align: center;
+    h2 {
+        margin: 15px auto;
+        color: $homePageFontColor;
+        font-weight: 700;
+    }
+}
+.time-line {
+    padding-bottom: 50px;
+}
+.time-line ul {
+    transform: translateX(-130px);
+    li {
+    list-style: none;
+    display: block;
+    width: 11px;
+    background-color: $homePageFontColor;
+    margin: auto auto;
+    }
+}
+.time-line ul li .point{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $homePageFontColor;
+    transform: translate(-9px, -1px);
+}
+.glyphicon.glyphicon-chevron-up {
+    color: $homePageFontColor;
+    font-size: 50px;
+    position: absolute;
+    transform: translate(-22px, -15px);
+}
+.education-steps {
+    display: block;
+    padding: 20px 50px;
+    transform: translateY(30px);
+    white-space: nowrap;
+    color: $homePageFontColor;
+    p {
+        display: block;
+        background-color: $backgroundColor;
+        min-width: 250px;
+        padding: 15px;
+        border-radius: 5px;
+    }
+}
+.education-steps > p::first-line {
+            font-weight: 700;
+            font-size: 15px;
+        }
+
+
+
+
 footer {
     background-color: $backgroundColor;
     color: $homePageFontColor;
@@ -85,10 +169,10 @@ p.fastMenu a :hover {
     text-decoration: none;
 }
 .separator {
-    width: 40px;
+    width: 35px;
     height: 2px;
     background-color: $homePageFontColor;
-    margin: 10px auto;
+    margin: -15px auto 10px auto;
 }
 footer .icon {
     display: inline-block;
