@@ -72,7 +72,7 @@
   transition: 2s; }
 
 main > .container-fluid {
-  background-color: #b6b6b6; }
+  background-color: #fff; }
 
 #about-me {
   text-align: justify;
@@ -88,7 +88,7 @@ main > .container-fluid {
   .about-me-paragraph p, .about-me-paragraph h2 {
     display: block;
     margin: 3px 0;
-    color: #fff; }
+    color: #555; }
   .about-me-paragraph h2 {
     font-weight: 700; }
 
@@ -96,7 +96,7 @@ main > .container-fluid {
   text-align: center; }
   .education-header h2 {
     margin: 15px auto;
-    color: #fff;
+    color: #555;
     font-weight: 700; }
 
 .time-line {
@@ -108,7 +108,7 @@ main > .container-fluid {
     list-style: none;
     display: block;
     width: 11px;
-    background-color: #fff;
+    background-color: #555;
     margin: auto auto; }
 
 .time-line ul li .point {
@@ -116,11 +116,11 @@ main > .container-fluid {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #555;
   transform: translate(-9px, -1px); }
 
 .glyphicon.glyphicon-chevron-up {
-  color: #fff;
+  color: #555;
   font-size: 50px;
   position: absolute;
   transform: translate(-22px, -15px); }
