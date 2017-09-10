@@ -76,7 +76,7 @@ main > .container-fluid {
 
 #about-me {
   text-align: justify;
-  margin: 30px 0; }
+  margin-top: 30px; }
 
 .profil-photo .img-circle {
   display: block;
@@ -94,7 +94,7 @@ main > .container-fluid {
 
 .education-header {
   text-align: center;
-  margin: 30px 0; }
+  margin-top: 30px; }
   .education-header h2 {
     margin: 25px auto;
     color: #555;
@@ -143,18 +143,16 @@ main > .container-fluid {
   font-weight: 700;
   font-size: 15px; }
 
-#skills {
-  margin: 30px 0; }
-  #skills > div {
-    text-align: center;
-    padding: 10px; }
-    #skills > div p {
-      margin: 10px;
-      font-style: italic; }
-    #skills > div h2 {
-      color: #555;
-      font-weight: 700;
-      margin-bottom: 30px; }
+#skills > div {
+  text-align: center;
+  padding: 10px; }
+  #skills > div p {
+    margin: 10px;
+    font-style: italic; }
+  #skills > div h2 {
+    color: #555;
+    font-weight: 700;
+    margin-bottom: 30px; }
 
 footer {
   background-color: #555;
