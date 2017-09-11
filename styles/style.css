@@ -154,6 +154,11 @@ main > .container-fluid {
     font-weight: 700;
     margin-bottom: 30px; }
 
+#contact {
+  background-color: grey;
+  color: #fff;
+  height: 350px; }
+
 footer {
   background-color: #555;
   color: #fff; }
