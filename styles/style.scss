@@ -172,9 +172,14 @@ main > .container-fluid {
 }
 
 #contact {
-    background-color: grey;
+    background-color: #acacac;
     color: $homePageFontColor;
-    height: 350px;   
+    padding-bottom: 20px;
+    text-align: center;
+    #contact-form {
+        max-width: 350px;
+        margin: 0 auto;
+    }
 }
 
 
