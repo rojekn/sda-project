@@ -1,38 +1,16 @@
 <?php
+error_reporting(-1);
+ini_set('display_errors', 'On');
 
-require_once 'class.phpmailer.php';
 
-$_POST = array_map('trim', $_POST);
+$to      = 'rojek_natalia@wp.pl';
+$subject = 'the subject';
+$message = $_POST['contact_body'];
+$headers = 'From:' . $_POST['contact_name'] . "\r\n" .
+    'Reply-To:' . $_POST['contact_email'] . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
 
-$error = false;
+mail($to, $subject, $message, $headers);
 
-if (!isset($_POST['contact_name']) || empty($_POST['contact_name'])) {
-    $error = true;
-}
-
-if (!isset($_POST['contact_email']) || empty($_POST['contact_email']) || !PHPMailer::ValidateAddress($_POST['contact_email'])) {
-    $error = true;
-}
-
-if (!isset($_POST['contact_body']) || empty($_POST['contact_body'])) {
-    $error = true;
-}
-
-if ($error) {
-    exit('nok');
-}
-
-$mail = new PHPMailer();
-
-$mail->CharSet = 'UTF-8';
-
-$mail->SetFrom($_POST['contact_email'], $_POST['contact_name']);
-$mail->AddAddress('rojek_natalia@wp.pl');
-$mail->Subject = 'Wiadomość ze strony internetowej';
-$mail->Body = $_POST['contact_body'];
-
-if (!$mail->Send()) {
-    exit('nok');
-}
-
-exit('ok');
+header("Location: ../index.html#send");
+die();
