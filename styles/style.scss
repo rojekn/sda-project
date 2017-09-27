@@ -62,11 +62,15 @@ outline: 0;
     padding: 10px;
     margin: 10px;
 }
-.navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav>li>a:focus {
+    color: $homePageFontColor;
+}
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a.active {
     background-color: rgba(255,255,255,0.3);
     border: 4px rgba(255,255,255,0.3);
     border-radius: 5%;
-    color: $backgroundColor;
+    color: $homePageFontColor;
 }
 .navbar {
     background-color: transparent;
