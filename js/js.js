@@ -28,9 +28,7 @@ $(document).ready(function () {
             $('#contact h2').slideUp();
             $form.slideUp();
             $form.after('<div class="form-success" style="font-size:25px">Wiadomość została wysłana!</div>');
-
         };
     })(); 
-    
     
 })
