@@ -32,9 +32,14 @@ $(document).ready(function () {
         $('.navbar-nav li a').each(function () {
             var currLink = $(this);
             var refElement = $(currLink.attr("href"));
+            
             if (refElement.position().top - 50 <= scrollPos) {
                 $('.navbar-nav li a').removeClass("active");
                 currLink.addClass("active");
+            }
+            else if (scrollPos === document.body.offsetHeight - window.innerHeight) {
+                $('.navbar-nav li a').removeClass("active");
+                $(currLink.attr("href", "#contact")).addClass("active");
             }
             else{
                 currLink.removeClass("active");
